@@ -522,7 +522,7 @@ Avalon data or clinical recommendations.
 
 ------------------------------------------------------------------------
 
-## Suggested GitHub repository structure
+## Suggested finalized project structure
 
 ``` text
 healthcare-claims-data-platform/
