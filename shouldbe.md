@@ -9,23 +9,23 @@ SOURCE SYSTEMS
 Medical claims · Member eligibility · Provider directory
 Diagnosis/procedure reference data
         |
-        v
+        
 1. INGESTION — BRONZE
 Python / PySpark · CSV/JSON · S3 landing zone · Batch metadata
 Preserve source data
         |
-        v
+        
 2. VALIDATION & TRANSFORMATION — SILVER
 SQL / Python · Standardization · Deduplication
 Referential integrity · Data quality rules
 Reject or quarantine invalid records
         |
-        v
+        
 3. DATA WAREHOUSE — GOLD
 SQL Server · Fact and dimension tables
 Aggregations · Reconciliation
         |
-        v
+        
 4. CONSUMPTION
 Power BI / Tableau · Claims analytics · Provider analytics
 Diagnostic utilization · Data science
@@ -300,7 +300,7 @@ def validate_claims(df: pd.DataFrame) -> ValidationResult:
     )
 ```
 
-**Why this is valuable:** It demonstrates explicit validation rules,
+**Why this is here:** It demonstrates explicit validation rules,
 rejected-record handling, reproducibility, and measurable data quality.
 In a production implementation, add rule versioning, configurable
 thresholds, structured logs, and tests for edge cases.
@@ -354,7 +354,7 @@ FROM warehouse.FactClaimLine
 GROUP BY LoadBatchID;
 ```
 
-For a stronger project, implement a reconciliation table named
+For a stronger project, I implement a reconciliation table named
 `audit.ETLBatchAudit`.
 
   Column            Purpose
@@ -463,7 +463,7 @@ if __name__ == "__main__":
     )
 ```
 
-For the finished version, add:
+For the finished version, I will add:
 
 -   SQL Server loading through SQLAlchemy/ODBC.
 -   Incremental loads and idempotent processing.
@@ -473,8 +473,8 @@ For the finished version, add:
 -   Unit tests with `pytest`.
 -   A scheduler, such as SQL Server Agent or an orchestration tool.
 
-I would also include a PySpark implementation of the transformation
-layer, since that connects the project to existing Spark/Databricks
+I will also include a PySpark implementation of the transformation
+layer, since that connects the project to my Spark/Databricks
 experience.
 
 ## 7. Analytics that connect directly to Avalon
@@ -510,7 +510,7 @@ analytical data products.
 ### Dashboard design references
 
 The uploaded dashboard image and the following examples can be used as
-visual inspiration for the Power BI/Tableau deliverables. Use synthetic
+visual inspiration for the Power BI/Tableau deliverables. I use synthetic
 data and label the dashboards clearly as demonstrations---not actual
 Avalon data or clinical recommendations.
 
@@ -552,7 +552,7 @@ healthcare-claims-data-platform/
 
 ## Project positioning
 
-Present this as a synthetic healthcare claims data engineering and
+I present this as a synthetic healthcare claims data engineering and
 analytics project. It demonstrates an end-to-end workflow: source
 ingestion, data validation, transformation, relational warehousing,
 reconciliation, monitoring, and business-facing analytics.
