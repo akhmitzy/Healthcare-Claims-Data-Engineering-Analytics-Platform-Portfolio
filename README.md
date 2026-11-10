@@ -168,7 +168,7 @@ Healthcare-Claims-Data-Engineering/
 
 ## Disclaimer
 
-This is an educational portfolio project. It is not a clinical
+This is an educational portfolio project - I just want to show how great I am. It is not a clinical
 decision-support system, a claims adjudication engine, or a substitute
 for payer-specific policies, regulatory review, or production security
-controls.
+controls - I just want to show how useful I can be.
