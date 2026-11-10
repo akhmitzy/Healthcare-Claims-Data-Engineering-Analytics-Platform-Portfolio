@@ -507,6 +507,8 @@ analytical data products.
 -   Rejected records by source system.
 -   Pipeline execution success rate.
 
+![Healthcare Claims Dashboard](pics/pics.png)
+
 ### Dashboard design references
 
 The uploaded dashboard image and the following examples can be used as
